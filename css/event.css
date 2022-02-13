@@ -26,6 +26,7 @@
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color .3s ease-out, border .3s ease-out;
 }
 
 .events__slider-pagination {
@@ -181,6 +182,8 @@ h4 {
     transform: translate(-72%, -50%);
 }
 
+.grey-swip-btn:hover {}
+
 @media (max-width: 1024px) {
     .events__item {
         width: calc(100% / 2 - 20px);
@@ -209,8 +212,8 @@ h4 {
     }
 }
 
-.grey-swip-btn:hover:not(:active):not(:focus) {
-    color: #D1A9F0;
+.grey-swip-btn:hover:not(:focus) {
+    background-color: #D1A9F0;
 }
 
 .grey-swip-btn:active:not(:hover):not(:focus) {
