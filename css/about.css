@@ -1,0 +1,43 @@
+.about__description {
+    max-width: 1080px;
+    margin: 0;
+    line-height: 32px;
+}
+
+.about__heading {
+    margin-bottom: 14px;
+}
+
+.about {
+    padding-bottom: 71px;
+    padding-top: 80px;
+}
+
+@media (max-width: 1024px) {
+    .about__heading {
+        padding-bottom: 2px;
+    }
+}
+
+@media (max-width: 778px) {}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .about__description {
+        width: 100%;
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .about {
+        padding-top: 40px;
+        padding-bottom: 43px;
+    }
+    .about__heading {
+        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 56px;
+    }
+}

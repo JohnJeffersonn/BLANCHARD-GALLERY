@@ -1,0 +1,218 @@
+.swiper4 {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    overflow: hidden;
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(1450/ 1600*100%);
+}
+
+.project__partners {
+    position: relative;
+}
+
+.grey-swip-btn {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #ECECEC;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.events__slider-pagination {
+    display: none;
+}
+
+.grey-swip-btn::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 7px / 2);
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+.events__button-next::before {
+    left: calc(50% - 7px / 2);
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.events__button-prev::before {
+    left: calc(50% - 7px / 2);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.events__nav {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.events__container {}
+
+.events__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(100% / 3 - 39px);
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.events__head {
+    padding-bottom: 19px;
+}
+
+.events__heading {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 33px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.events__slider-link {
+    margin-top: auto;
+}
+
+.events__item-pic {
+    width: 100%;
+}
+
+.events__content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    padding: 13px 50px 50px;
+    border: 1px solid grey;
+    border-top: none;
+    min-height: 400px;
+}
+
+.events__content-info {
+    font-size: 12px;
+    margin-bottom: 13px;
+    line-height: 16px;
+    font-weight: 600;
+    color: rgba(153, 153, 153, 1);
+}
+
+.events__content-block-info-text {
+    display: block;
+}
+
+.events__link-more {
+    width: 23%;
+    display: inline-block;
+    border-bottom: 1px solid rgba(157, 92, 208, 1);
+}
+
+.events__btn-more {
+    position: relative;
+    left: 41%;
+    display: inline-block;
+    padding: 17px 35px;
+    border-radius: 30px;
+    border: 1px solid rgba(157, 92, 208, 1);
+    color: rgba(157, 92, 208, 1);
+    margin-left: 50px;
+    font-size: 19px;
+    text-align: center;
+}
+
+.events__item:not(:nth-child(3)) {
+    margin-right: 48px;
+}
+
+.event-link-before::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -1px;
+    width: calc(100% + -73%);
+    height: calc(100% + -42px);
+    transform: scaleX(0);
+    background-color: var(--colorA4);
+    transform-origin: left;
+    transition: transform .3s ease;
+}
+
+.events__slider-btn {
+    z-index: 123;
+    position: absolute;
+    top: 50%;
+    transition: opacity .3s ease-out;
+}
+
+.events__button-next {
+    right: 0;
+    transform: translate(-10%, -50%);
+}
+
+.events__button-prev {
+    left: 0;
+    transform: translate(-72%, -50%);
+}
+
+@media (max-width: 1024px) {
+    .events__item {
+        width: calc(100% / 2 - 20px);
+    }
+    .events__button-prev {
+        transform: translate(-21%, -50%)
+    }
+}
+
+@media (max-width: 778px) {
+    .events__item:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+@media (max-width: 580px) {
+    .slides-wrap1 {
+        flex-wrap: nowrap;
+    }
+    .slide {
+        width: 100%;
+        margin-right: 0;
+    }
+    .btn {
+        display: none;
+    }
+}
+
+.grey-swip-btn:hover:not(:active):not(:focus) {
+    color: #D1A9F0;
+}
+
+.grey-swip-btn:active:not(:hover):not(:focus) {
+    border: 1px solid #9D5CD0;
+}

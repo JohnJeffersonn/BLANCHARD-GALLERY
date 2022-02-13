@@ -1,0 +1,167 @@
+.contacts {
+    padding-top: 80px;
+}
+
+.contacts {
+    overflow-x: hidden;
+    /* это нужно для того, чтоб не создавалось горизонтального скролла из-за скроллбара справа на десктопной версии, который не учитывается при задании измерений в vw */
+    padding-top: 40px;
+}
+
+.contacts__wrap {
+    border-top: 1px solid lightgray;
+}
+
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__bFormOrder-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contacts__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    background-color: #fff;
+}
+
+.contacts__map {
+    height: 700px;
+    width: 100%;
+    /* width: calc(1078 / 1820 * 100% + ((100vw - 100%) / 2)); */
+    /* 1078 - в данном случае это ширина карты внутри контейнера, её можно менять */
+    margin-right: calc((-100vw + 100%) / 2);
+    margin-top: -1px;
+    transition-property: width, height, padding;
+    transition-duration: 100ms;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+@media (max-width: 1124px) {
+    /* .contacts__contacts {
+        width: calc(437 / 924 * 100%);
+    } */
+    /* .contacts__map {
+        width: calc(487 / 924 * 100% + ((100vw - 100%) / 2));
+    } */
+}
+
+@media (max-width: 778px) {
+    /* .contacts__contacts {
+        width: calc(380 / 668 * 100%);
+    }
+    .contacts__map {
+        width: calc(288 / 668 * 100% + ((100vw - 100%) / 2));
+    } */
+}
+
+@media (max-width: 580px) {
+    .contacts__bFormOrder-item,
+    .contacts__bFormOrder-IN {
+        width: 100%;
+    }
+    .contacts__contacts {
+        width: 100%;
+    }
+    /* .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    } */
+    .contacts__container {
+        flex-direction: column-reverse;
+    }
+    .contacts__wrap,
+    .contacts__contacts {
+        border: none;
+    }
+    .contacts__map {
+        height: 320px;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+.contacts__heading {
+    padding-left: 165px;
+}
+
+.contacts__bAddress {
+    margin-bottom: 27px;
+}
+
+.contacts__bFormOrder-IN {
+    border: 1px solid grey;
+    border-radius: 20px;
+    color: black;
+    padding: 18px;
+}
+
+.contacts__bFormOrder-item {
+    margin-bottom: 27px;
+}
+
+.contacts__bFormOrder-btn {
+    border: 1px solid rgba(157, 92, 208, 1);
+    border-radius: 40px;
+    padding: 17px 35px;
+    color: rgba(157, 92, 208, 1);
+    margin-bottom: 38px;
+}
+
+.contacts__shareWithUs-text {
+    font-size: 24px;
+}
+
+.contacts__shareWithUs-list {
+    display: flex;
+    flex-direction: row;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
+.contacts__shareWithUs-icon path {
+    transform: opacity 0.3s ease;
+}
+
+.contacts__shareWithUs-icon path:hover {
+    opacity: 0.3;
+}
+
+.contacts__shareWithUs-icon path:focus {
+    opacity: 0.3;
+}
+
+.contacts__shareWithUs-icon path:active {
+    opacity: 1;
+}
+
+.contacts__bFormOrder-btn:hover {
+    background-color: var(--main);
+    color: white;
+}
+
+.contacts__bFormOrder-btn:focus {
+    outline: var(--main);
+}
+
+.contacts__bFormOrder-btn:hover {
+    background-color: var(--two);
+    border: var(--main);
+    color: white;
+}

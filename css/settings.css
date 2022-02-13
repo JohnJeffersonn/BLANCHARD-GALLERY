@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Regular.eot");
+    src: local("OpenSans-Regular"), local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("Hotel/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Italic.eot");
+    src: local("OpenSans-Italic"), local("OpenSans-Italic"), url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("Hotel/fonts/OpenSans-Italic.woff") format("woff");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Light.eot");
+    src: local("OpenSans-Light"), local("OpenSans-Light"), url("../fonts/OpenSans-Light.woff2") format("woff2"), url("Hotel/fonts/OpenSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../fonts/OpenSans-Bold.eot");
+    src: local("OpenSans-Bold"), local("OpenSans-Bold"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("Hotel/fonts/OpenSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    --font-size: 16px;
+    --breakpointfirst-width: 1024px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+h2 {
+    margin: 0;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 65px;
+}
+
+h3 {
+    padding: 0;
+    margin: 0 auto;
+    font-weight: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: "OpenSans";
+}
+
+.container {
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+.btn {
+    padding: 25px 37px;
+    background-color: #ff9900;
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.link-text {
+    position: relative;
+}
